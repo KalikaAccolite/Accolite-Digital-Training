@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    background:rgb(209, 126, 17);
+}
+.border{
+    background: rgb(214, 209, 209);
+    margin-top:30px;
+    margin-right:30px;
+    margin-left: 30px;
+    padding-top:10px ;
+    padding-bottom:20px ;
+    padding-left: 20px;
+    padding-right:20px;
+    border-width: 10px;
+    border-style: solid ;
+    border-color: black;
+}
+.title{
+    background: rgb(214, 209, 209);
+    font-style: oblique;
+    font-size: 22px;
+}
+.bar{
+    width: 100%;
+    background-color:rgb(252, 246, 246) ;
+}
+.heading {
+    text-align: center;
+}
+.performance{
+    text-align: right;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: white;
+}
+
+.java{
+    width: 89%;
+    background-color: brown;
+
+}
+.c{
+    width: 50%;
+    background-color: rgb(108, 120, 228);
+}
+.html{
+    width: 95%;
+    background-color: rgb(227, 230, 62);
+}
+.python{
+    width: 70%;
+    background-color: rgb(221, 83, 140);
+}

@@ -1,0 +1,76 @@
+.{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+    background-image: url('https://img.freepik.com/free-photo/snake-game-arrow-with-wooden-outline-copy-space_23-2148445461.jpg?t=st=1709720372~exp=1709723972~hmac=ba602e405dca884fdc8e673fedf5e811300f40a8bdb9ba6df9abf99824ca57bc&w=740');
+    background-size: cover;
+    background-position: center;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration:none ;
+    color: black;
+    font-size:1.5rem ;
+}
+a:hover{
+    color:green;
+}
+
+header{
+    position: relative;
+    padding: 0.2rem;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-links{
+    display: flex;
+    gap: 2rem;
+}
+
+
+
+.border{
+    background: rgb(214, 209, 209);
+    margin-top:60px;
+    margin-left: 700px;
+    margin-right: 30px;
+    padding-top:10px ;
+    padding-bottom:20px ;
+    padding-left: 20px;
+    padding-right:20px;
+    border-width: 5px;
+    border-style: solid ;
+    border-color: black;
+}
+.border .title{
+    font-style: oblique;
+    font-size: 22px;
+}
+
+.list{
+    gap:2rem;
+    display: flex;
+}

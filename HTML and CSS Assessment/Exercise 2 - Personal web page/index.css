@@ -1,0 +1,66 @@
+.{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+    background-image: url('https://img.freepik.com/free-vector/blue-gradient-blank-background-vector-business_53876-174933.jpg?t=st=1709716091~exp=1709719691~hmac=636af54052ab6af3ca937508ba3617dfc8146d40621cfaf4d5bfd8c2f4c72e46&w=996');
+    background-size: cover;
+    background-position: center;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration:none ;
+    color: black;
+    font-size:1.5rem ;
+}
+a:hover{
+    color:green;
+}
+
+header{
+    position: relative;
+    padding: 0.2rem;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-links{
+    display: flex;
+    gap: 2rem;
+}
+
+#kalika{
+    height: calc(100vh-60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+#kalika h1{
+    margin-top: 200px;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
