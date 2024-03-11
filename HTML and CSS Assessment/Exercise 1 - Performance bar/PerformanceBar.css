@@ -51,3 +51,30 @@
     width: 70%;
     background-color: rgb(221, 83, 140);
 }
+
+
+
+@media screen and (max-width: 768px){
+    .container{
+       padding: 10px;
+    }
+    .header, .navbar, .footer{
+       padding: 5px;
+    }
+    .content{
+       padding: 10px;
+    }
+  }
+  
+  @media screen and(max-width: 480px) {
+    .container{
+       padding: 5px;
+    }
+    .header, .navbar, .footer{
+       padding: 3px;
+    }
+    .content{
+       padding: 5px;
+    }
+  }
+  

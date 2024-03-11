@@ -1,4 +1,4 @@
-.{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -50,17 +50,327 @@ header{
     gap: 2rem;
 }
 
-#kalika{
-    height: calc(100vh-60px);
+#kalika {
+    width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    height: calc(100vh-60px);
+    flex-direction: row;
     justify-content: center;
     text-align: center;
     color: black;
 }
-#kalika h1{
-    margin-top: 200px;
-    font-size: 3rem;
-    margin-bottom: 2rem;
+
+
+ .pict {
+    margin-top: 5rem;
+    margin-right: 2rem;  
+    width: 300px;
+    background-size: contain;
+    height: 350px;
+    border-radius: 90%;
+    overflow: hidden;
+    border: 5px solid black;
+    /* margin-right: 20px; Adjust this value as needed */
 }
+.picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contentbox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+}
+.contentbox h2{
+    font-size: 30px;
+}
+.contentbox h3{
+    font-size: 20px;
+}
+
+
+
+.contentbox {
+    display:inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+  }
+  
+  .contentbox:first-of-type {   
+    animation: showup 7s infinite;
+  }
+  
+  .contentbox:last-of-type {
+    width:0px;
+    animation: reveal 7s infinite;
+  }
+  
+  .contentbox:last-of-type h2 {
+    margin-left:-355px;
+    animation: slidein 7s infinite;
+  }
+  
+  @keyframes showup {
+      0% {opacity:0;}
+      20% {opacity:1;}
+      80% {opacity:1;}
+      100% {opacity:0;}
+  }
+  
+  @keyframes slidein {
+      0% { margin-left:-800px; }
+      20% { margin-left:-800px; }
+      35% { margin-left:0px; }
+      100% { margin-left:0px; }
+  }
+  
+  @keyframes reveal {
+      0% {opacity:0;width:0px;}
+      20% {opacity:1;width:0px;}
+      30% {width:355px;}
+      80% {opacity:1;}
+      100% {opacity:0;width:355px;}
+  }
+  
+
+  .story {
+    background-color: rgb(33, 58, 141);
+    margin-top: 50px; 
+    padding: 20px; 
+   
+    border-radius: 5px; 
+    width: 95%;
+    border-radius: 10px;
+    margin-left: 35px;
+    margin-right: 5px;
+}
+
+.story h3 {
+    color: white;
+    font-size: 1.2rem; 
+    line-height: 1.5; 
+}
+
+
+.story h2 {
+    font-family: 'Teko', sans-serif;
+    color: black;
+    grid-column: 1;
+    grid-row: 1;
+    align-self: end;
+    justify-content: center;
+    justify-self: center;
+    padding-bottom: 1rem;
+  }
+  
+ 
+.story h2 {
+    animation: shine 2s forwards, blink 10s 1s infinite;
+  }
+  
+  @keyframes shine {
+    0% {
+      color: #6b1839;
+      text-shadow: none;
+    }
+    100% {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #a7ebf7,
+        -0.2rem 0.1rem 1rem #a7ebf7, 0.2rem 0.1rem 1rem #a7ebf7,
+        0 -0.5rem 2rem #a7ebf7, 0 0.5rem 3rem #a7ebf7;
+    }
+  }
+  
+  @keyframes flicker {
+    from {
+      opacity: 1;
+    }
+  
+    4% {
+      opacity: 0.9;
+    }
+  
+    6% {
+      opacity: 0.85;
+    }
+  
+    8% {
+      opacity: 0.95;
+    }
+  
+    10% {
+      opacity: 0.9;
+    }
+  
+    11% {
+      opacity: 0.922;
+    }
+  
+    12% {
+      opacity: 0.9;
+    }
+  
+    14% {
+      opacity: 0.95;
+    }
+  
+    16% {
+      opacity: 0.98;
+    }
+  
+    17% {
+      opacity: 0.9;
+    }
+  
+    19% {
+      opacity: 0.93;
+    }
+  
+    20% {
+      opacity: 0.99;
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    26% {
+      opacity: 0.94;
+    }
+  
+    28% {
+      opacity: 0.98;
+    }
+  
+    37% {
+      opacity: 0.93;
+    }
+  
+    38% {
+      opacity: 0.5;
+    }
+  
+    39% {
+      opacity: 0.96;
+    }
+  
+    42% {
+      opacity: 1;
+    }
+  
+    44% {
+      opacity: 0.97;
+    }
+  
+    46% {
+      opacity: 0.94;
+    }
+  
+    56% {
+      opacity: 0.9;
+    }
+  
+    58% {
+      opacity: 0.9;
+    }
+  
+    60% {
+      opacity: 0.99;
+    }
+  
+    68% {
+      opacity: 1;
+    }
+  
+    70% {
+      opacity: 0.9;
+    }
+  
+    72% {
+      opacity: 0.95;
+    }
+  
+    93% {
+      opacity: 0.93;
+    }
+  
+    95% {
+      opacity: 0.95;
+    }
+  
+    97% {
+      opacity: 0.93;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+
+.contact {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-link {
+    margin-right: 20px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-link:hover {
+    color: #0077b5;
+}
+
+
+
+
+@media screen and (max-width: 768px){
+  .container{
+     padding: 10px;
+  }
+  .header, .navbar, .footer{
+     padding: 5px;
+  }
+  .content{
+     padding: 10px;
+  }
+}
+
+@media screen and(max-width: 480px) {
+  .container{
+     padding: 5px;
+  }
+  .header, .navbar, .footer{
+     padding: 3px;
+  }
+  .content{
+     padding: 5px;
+  }
+}
+
