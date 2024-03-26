@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+
+<context:property-placeholder location="classpath:app.properties" />
+
+<bean id="Info1" class="JDBC.SpringExercise2.Exercise2"> 
+	<property name="Name" value="${Info1.Name}"/>
+	<property name="Age" value="${Info1.Age}"/>
+	<property name="City" value="${Info1.City}"/>
+</bean>
+
+
+<bean id="Info2" class="JDBC.SpringExercise2.Exercise2"> 
+	<property name="Name" value="${Info2.Name}"/>
+	<property name="Age" value="${Info2.Age}"/>
+	<property name="City" value="${Info2.City}"/>
+</bean>
+
+<bean id="Info3" class="JDBC.SpringExercise2.Exercise2"> 
+	<property name="Name" value="${Info3.Name}"/>
+	<property name="Age" value="${Info3.Age}"/>
+	<property name="City" value="${Info3.City}"/>
+</bean>
+
+<bean id="Info4" class="JDBC.SpringExercise2.Exercise2"> 
+	<property name="Name" value="${Info4.Name}"/>
+	<property name="Age" value="${Info4.Age}"/>
+	<property name="City" value="${Info4.City}"/>
+</bean>
+
+<bean id="Info5" class="JDBC.SpringExercise2.Exercise2"> 
+	<property name="Name" value="${Info5.Name}"/>
+	<property name="Age" value="${Info5.Age}"/>
+	<property name="City" value="${Info5.City}"/>
+</bean>
+</beans>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean class="JDBC.SpringExercise1.Exercise1" id="key1">
+	<property name="key"><value>1</value></property>
+<property name="Value"><value>Kalika</value></property>
+</bean>
+
+<bean class="JDBC.SpringExercise1.Exercise1" id="key2">
+	<property name="key"><value>2</value></property>
+<property name="Value"><value>Utkarsh</value></property>
+</bean>
+
+<bean class="JDBC.SpringExercise1.Exercise1" id="key3">
+	<property name="key"><value>3</value></property>
+<property name="Value"><value>Shivi</value></property>
+</bean>
+
+
+<bean class="JDBC.SpringExercise1.Exercise1" id="key4">
+	<property name="key"><value>4</value></property>
+<property name="Value"><value>Aman</value></property>
+</bean>
+
+<bean class="JDBC.SpringExercise1.Exercise1" id="key5">
+	<property name="key"><value>5</value></property>
+<property name="Value"><value>Avikaar</value></property>
+</bean>
+</beans>
